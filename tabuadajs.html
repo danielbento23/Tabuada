@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="estilo.css" rel="stylesheet">
+    <title>Tabuada</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Tabuada</h2>
+            <h3>Digite um numero</h3>
+            <input type="number" name="txtnum" id="txtnum">
+            <input id="botao" type="button" value="Enviar" onclick="calcular()" >
+        </div>
+    </div>
+    <br>
+        <div id="resul1">Resultado:</div>
+</body>
+    <script>
+        function calcular(){
+            var tnum = (document.getElementById('txtnum'))
+            var num = Number(tnum.value)
+            var res = document.getElementById('resul')
+
+            resul1.style.background = '#add8e6'
+            resul1.innerHTML = num + ' x 1 = ' + num * 1 +  "<br />"+num +' x 2 = ' + num * 2 +
+            "<br />"+num +' x 3 = ' + num * 3 +
+            "<br />"+num +' x 4 = ' + num * 4 +
+            "<br />"+num +' x 5 = ' + num * 5 +
+            "<br />"+num +' x 6 = ' + num * 6 +
+            "<br />"+num +' x 7 = ' + num * 7 +
+            "<br />"+num +' x 8 = ' + num * 8 +
+            "<br />"+num +' x 9 = ' + num * 9 +
+            "<br />"+num +' x 10 = ' + num * 10 ;
+
+            
+        }
+    </script>
+</html>
